@@ -1,0 +1,6 @@
+ailab-prompting scaffolded locally 2026-10-02 from origin/main of:
+  ailab-template-python @ 00c298d931c8452ad1bfe9a42a3e7e23998f7c1f
+Patterns (gate / provider / cassette / content-gates) ported from local:
+  ailab-rag @ 3cd8f82f37d10bfe3c9f6595baf5620b793341f2 (working tree verified clean at port time)
+Local-only build. No GitHub remote. No push in v1.
+Ollama host is runtime-only via OLLAMA_HOST; never committed.

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# The canonical eval_results.json and the two results/ comparison runs ARE committed:
+# docs/LEARNING.md figures and the CI check-learning-numbers step are validated against
+# them. Re-running `make eval` rewrites eval_results.json (its timestamp/commit change);
+# commit it again, or `git checkout` it, if you only wanted to run the gate locally.
+
+# Local secrets and config: never commit
+.env
+.env.*
+denylist.txt
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,21 @@
+# `docker compose up` builds the image and runs the demo + eval once.
+services:
+  ailab:
+    build:
+      context: .
+      args:
+        GIT_COMMIT: ${GIT_COMMIT:-unknown}
+    image: ailab-template-python:local
+    environment:
+      # Override any eval setting here or in your shell, e.g. AILAB_MIN_ACCURACY=0.9
+      AILAB_CLASSIFIER: ${AILAB_CLASSIFIER:-keyword}
+      AILAB_MIN_ACCURACY: ${AILAB_MIN_ACCURACY:-0.80}
+      AILAB_MIN_MACRO_F1: ${AILAB_MIN_MACRO_F1:-0.80}
+    read_only: true
+    tmpfs:
+      - /tmp
+    volumes:
+      - results:/app/results
+
+volumes:
+  results:
