@@ -1,0 +1,733 @@
+{
+  "model": "gemma3:27b",
+  "provider": "ollama",
+  "model_digest": "a418f5838eaf7fe2cfe0a3046c8384b68ba43a4435542c942f9db00a5f342203",
+  "ollama_version": "0.32.1",
+  "temperature": 0,
+  "seed": 7,
+  "recorded_on": "2026-10-02",
+  "entry_count": 120,
+  "note": "Real recording from a local Ollama server (host from OLLAMA_HOST, never stored). Keys are sha256(model, prompt). Covers the three strategies over the extraction set, the wrong-label few-shot red variant, and the primary strategy over the injection set with defenses off and on. Pinned temperature 0 and a fixed seed.",
+  "entries": {
+    "ecaf807903df67f5f838257bf6a11da85416b898aa5e1c31d566b478a1720214": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"high\"}\n",
+      "prompt_eval_count": 118,
+      "eval_count": 20
+    },
+    "a6a552c62f9985102b49b1ce1a6b6791ae7c35e0acd73aa410caf40dfc905f78": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 119,
+      "eval_count": 20
+    },
+    "b9bb96debdf2a72629069699c5f13dc40d653b1e163ce3a0fbf3f3ba73cf2bcb": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"high\"}\n",
+      "prompt_eval_count": 120,
+      "eval_count": 20
+    },
+    "a06c4d6eb22415bc70ca904f2fb15d5e6eb514a49d2eecaa904e892c3135e72a": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"sync\", \"severity\": \"medium\"}\n",
+      "prompt_eval_count": 123,
+      "eval_count": 20
+    },
+    "014b0aaf62f15c162d3e80017e7c78a27a2bf55c1625bb7c68439f5920e8e25d": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 115,
+      "eval_count": 20
+    },
+    "6e64ef362ca8df3abb59e47542d8184d29a3b78bcc952aba4703c4f7b15cb79b": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}\n",
+      "prompt_eval_count": 120,
+      "eval_count": 20
+    },
+    "32ad8f77ae3ae1520ef99192acb7ae4eb6a2ab97bcb872cf85ef8d8b86c8633e": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"medium\"}\n",
+      "prompt_eval_count": 121,
+      "eval_count": 20
+    },
+    "afbcd117153f102380fcec7125eb66aeb4420a06aa7154b0207c37da1e1eb25c": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"api\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 122,
+      "eval_count": 20
+    },
+    "5fda1d9f481d75eb7a40100fe86498b43b3bc2c47519a357e296c6654b822443": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"high\"}\n",
+      "prompt_eval_count": 121,
+      "eval_count": 20
+    },
+    "96e2cd16b9fa0473bfa91b4315b488c5fa97358dc78e88e82175626ad0c82106": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"mobile\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 116,
+      "eval_count": 20
+    },
+    "cdb499cedcd8f9ac346be428f73a5e43d312cce7a1cce1c3b8cfee57338cfd56": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"medium\"}\n",
+      "prompt_eval_count": 117,
+      "eval_count": 20
+    },
+    "77e19a45fc79aaa35dad819fc436b774501477bea1189ec112f124bd9b32929f": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"api\", \"severity\": \"high\"}\n",
+      "prompt_eval_count": 123,
+      "eval_count": 20
+    },
+    "53cc6ede6aca061139b7ac4050581c561aa656f96d109e1550aacb3806f3f1b9": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"mobile\", \"severity\": \"high\"}\n",
+      "prompt_eval_count": 123,
+      "eval_count": 20
+    },
+    "c20320892bc1ec352ea3fb294a04c6a9747aa77c662707c784fec80309f24793": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}\n",
+      "prompt_eval_count": 118,
+      "eval_count": 20
+    },
+    "10a1ef846e1c39ab7dbd5858de1d4c520eb21598ce6eb5b07447adedb9a00e05": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 121,
+      "eval_count": 20
+    },
+    "c90adca65ba040d35a89837e2af25210ecbc54f14516f1935175b5a26b6f06c8": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"api\", \"severity\": \"high\"}\n",
+      "prompt_eval_count": 123,
+      "eval_count": 20
+    },
+    "b1ad895b6fc255f1fa343906683719e28286cf5bfae58149796d0ad5db0aa2ac": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}\n",
+      "prompt_eval_count": 117,
+      "eval_count": 20
+    },
+    "ca69c44de6b8eeecab40f765da7f8c53fa423d00d30ec505c20b4daef79e358d": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 118,
+      "eval_count": 20
+    },
+    "f36f40594ec7e60e54b5d04156d998b2ed055ef1e566b98f2b7ed8e84c83d403": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"sync\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 123,
+      "eval_count": 20
+    },
+    "d7f5fc462af301421d2d55ec5103fb4b6fcf4bab6b131ce228a89deb4f370395": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"mobile\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 120,
+      "eval_count": 20
+    },
+    "06725e1e94928b80fc4792fc5f1c3185e4c9c669af64e0da9a61639a7e9c0959": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 116,
+      "eval_count": 20
+    },
+    "d426c8817ff110716299c8c995ad1933a2afc3d41635cbbfc15c6db414fcf1db": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"sync\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 118,
+      "eval_count": 20
+    },
+    "821141793c9728764b61a3dd9fb4181a9c4ab4a1f56bc97f470cabc59f77af12": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}\n",
+      "prompt_eval_count": 123,
+      "eval_count": 20
+    },
+    "c174c51377128303806972772c39b2ffc1787b8221cb76000244a11304b47d2b": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}\n",
+      "prompt_eval_count": 117,
+      "eval_count": 20
+    },
+    "7d772b026188fcd0f5482ecd3e596eded0b1994f301faf73827aee40fa6b55ef": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 252,
+      "eval_count": 19
+    },
+    "b97610eb1b214b903e121a0f97e17bcfe3d8e8c068fd1c4dc0f483fa440c7def": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 253,
+      "eval_count": 19
+    },
+    "eb54a4db420d15cf9157195bb8f1fcc28d2462c0b3f32fcec838aba720994962": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 254,
+      "eval_count": 19
+    },
+    "a2b44e02c9210a7c7d6d73dda3d495e03766b54aeb3e1c7602c4b97b1207f58a": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "49f9bf515221af4893c985a04b937112d1da84b71c2e879c87299906ea9d8294": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 249,
+      "eval_count": 19
+    },
+    "02c9743265044eee573de918ade1e72ff411e48d439703d889e947d5ad4f42cc": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 254,
+      "eval_count": 19
+    },
+    "73abc38af69afa91fa624771024c67a5a905a3095d43a6efc78fe6852b2187ad": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 255,
+      "eval_count": 19
+    },
+    "b0149c089981d80209160adb2709b31faed8ee8df3231a33630105bacf71ed12": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 256,
+      "eval_count": 19
+    },
+    "e47fa8788ca809ffbfdda79e54c42a592ec4611afa3a1fdcb85965bf1232ffb7": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 255,
+      "eval_count": 19
+    },
+    "07a3fe16063f4eb76f3372c9aee3c295a832ccd20f2198aa3c376a1b42a2a945": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 250,
+      "eval_count": 19
+    },
+    "c1b2fe8e7bc0da22f1524436faba21d99477aaab6443599ebceb5407007566c0": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 251,
+      "eval_count": 19
+    },
+    "fcee68dd007345198326b006e0c278816c9f33101b3d08473f4ab905f6449770": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"api\", \"severity\": \"high\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "5c79f42ef3366c2c71dfc8850a70d3754e221a3c84b08f3e386434135769119f": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "4fe2c0f562d7d47cad92f1bf1b5934cbb128f5f959a0971e131370e5bbcb5872": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 252,
+      "eval_count": 19
+    },
+    "9a89eb1f9c9f2d044d3415da00dbeddde3f72c0354b934d75d8c7591b6dba6c9": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 255,
+      "eval_count": 19
+    },
+    "b1ba7412c724c5e6ba77ae1dfa2ca6ff9bbb9ab7917fe3af9189b3b86193e6e9": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"api\", \"severity\": \"high\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "16705bde41518bc77dc444a1d8e2546712f030387a2d8b28e9a05185fe72dc8f": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 251,
+      "eval_count": 19
+    },
+    "4e9b77766e28d5d83212204efd9aae0963480d911f948f44ca5fe81de611d9ac": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 252,
+      "eval_count": 19
+    },
+    "1a5c66638547fac233f3977ffc3bb5cc6acde0d049d5439899dc499142d84378": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"sync\", \"severity\": \"low\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "dfe3d6198b2ba6705a3d24b2d74a83d4280f1717eb5d07eaa76f56a2156a57b8": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 254,
+      "eval_count": 19
+    },
+    "45d6cb70cb08c4521491873b6cf30b1c9b43000a6b7765f6fcf951fb790f1a5c": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 250,
+      "eval_count": 19
+    },
+    "e3f029713c6df77b12068f7f1335ce697798f9566caab416a09c6bc82f2e6845": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"sync\", \"severity\": \"low\"}",
+      "prompt_eval_count": 252,
+      "eval_count": 19
+    },
+    "4cb09e4c80edbbffd1adb44e30164603dc7782c80e55ce7d239cef69a04a50fa": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"mobile\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "ed658082ab144edd0bd42736a3d01d2bdee8db04ca29a88f1ef32e63e4271dea": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 251,
+      "eval_count": 19
+    },
+    "f3315eebbe7e5f7343a585f339f944415f307dc000f79baff551fa9c3717deb0": {
+      "model": "gemma3:27b",
+      "response": "The user is reporting a problem with logging in, so the intent is likely a bug. The issue specifically mentions the \"web dashboard\", indicating the product is \"web\". Being unable to log in is a significant issue impacting functionality, making the severity \"high\".\n\n{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 148,
+      "eval_count": 72
+    },
+    "b8246bc43efe7ce75d4f87b7cbf09ac7245d4f221f8c1bc42efd7d59a8953cf1": {
+      "model": "gemma3:27b",
+      "response": "The user is asking how to modify their profile information within the application. This indicates an **account** related intent. The question specifically mentions the **mobile** app, so that's the relevant product. Changing a displayed email isn't critical; it's more of a convenience issue, making the severity **low**.\n\n{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 149,
+      "eval_count": 85
+    },
+    "aa6877e9292fa2368a571b3f72a7083d3225557f2de0b99fd7a597e76fb1779c": {
+      "model": "gemma3:27b",
+      "response": "The user reports being locked out of their account due to a password change. This clearly indicates an **account** related issue. The problem prevents access, so it's about the core functionality - likely impacting the **web** interface as that's how most users manage accounts. Given the \"completely locked out\" and \"urgent\" phrasing, this is a **high** severity issue.\n\n{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 150,
+      "eval_count": 98
+    },
+    "3122cd4dc2be582984f07202b5cc1d5911bf4228c4479ccc1c1aff415aae9c51": {
+      "model": "gemma3:27b",
+      "response": "The user is reporting an issue with their account and how it interacts with the sync client. This indicates the intent is related to a bug or technical problem with accessing their account. The specific mention of \"sync client\" clearly identifies the product as \"sync\". Since the user can still access their account (just with repeated prompts), the severity isn't critical, so we classify it as medium.\n\n{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 153,
+      "eval_count": 99
+    },
+    "925a255026a2dadfd5e2ab814f5df5c92f8d89dd419e12abe4cd9bb4eb6f68d4": {
+      "model": "gemma3:27b",
+      "response": "The user is asking how to change a setting within the application. This indicates an **account** related question. The question specifically mentions \"web settings\", so the **product** is **web**. Changing a display name isn't critical, so the **severity** is **low**.\n\n{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 145,
+      "eval_count": 77
+    },
+    "b091f72536ed6e7d5d6d356e9cd043fa31a3030b9055404ac139732312366271": {
+      "model": "gemma3:27b",
+      "response": "The user is reporting an issue with their account being suspended, so the intent is clearly \"account\". They state they can't access things on \"mobile\", indicating the product affected is \"mobile\". The suspension of an account preventing access is a significant problem for the user, making the severity \"high\".\n\n{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 150,
+      "eval_count": 81
+    },
+    "f348b85f6904ea197ba8c0939c0f33761b3d67dc037dd72795ddf1f60b9df834": {
+      "model": "gemma3:27b",
+      "response": "The user is reporting a billing issue (\"charged twice\", \"refund\"). So the intent is clearly \"billing\". The problem relates to charges for a \"web\" plan, so the product is \"web\". Being charged twice is an error but not catastrophic; it's inconvenient and requires a refund, making the severity \"low\".\n\n{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 151,
+      "eval_count": 86
+    },
+    "2d5e42aa88b997fafe1c11edd7f8dbd5836794b91f7fc45b2259e5f347af3730": {
+      "model": "gemma3:27b",
+      "response": "The user is requesting copies of receipts, which falls under **billing**. The request specifically mentions \"API add-on\", so the **product** is **api**. Since this is a request for information and doesn't indicate any service disruption or critical issue, the **severity** is **low**.\n\n{\"intent\": \"billing\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 152,
+      "eval_count": 80
+    },
+    "74682ddfe3bdd8e35de7c2c8e41466b0958d31210028253698ca25f44748e2a0": {
+      "model": "gemma3:27b",
+      "response": "The customer is disputing a charge after cancellation, so the intent is clearly billing related. The message refers to a \"card\" and doesn't mention any specific product like an API or mobile app; it likely relates to web-based billing/account access. Given the phrase \"immediately\", the severity is high as this is causing financial distress for the customer.\n\n{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 151,
+      "eval_count": 93
+    },
+    "db99256dbd75f4486b415e057d96591e44419d7d1ac7eb0513065c00cd94cdc3": {
+      "model": "gemma3:27b",
+      "response": "The user is asking about pricing related to their subscription, so the intent is \"billing\". The question specifically mentions a \"mobile\" subscription, indicating the product is \"mobile\". Since this is a question about cost and doesn't indicate something is broken or urgent, the severity is \"low\".\n\n{\"intent\": \"billing\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 146,
+      "eval_count": 79
+    },
+    "465bd8553361688925688b285b9c89af8a976eb8c4e239de10616e57fd949ad2": {
+      "model": "gemma3:27b",
+      "response": "The customer is disputing their invoice amount, indicating an issue with billing. The message refers to \"invoice\" and \"plan\", which are related to account/billing details. There's no mention of any technical malfunction (bug) or suggestion for improvement (feedback). The problem seems incorrect charges, but not a critical system outage, so the severity is medium. The context points towards an issue with the billing aspect of their account, likely accessed through the web interface.\n\n{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 147,
+      "eval_count": 114
+    },
+    "057b44c8403092182e7de29de1d885ff1ff3f519691e155fe3cc6c207a18f0e9": {
+      "model": "gemma3:27b",
+      "response": "The customer is disputing a charge (\"billed\"), so the intent is billing. The message specifically mentions \"API calls\", indicating the product is api. A bill for ten thousand unexpected calls and described as a \"large amount\" suggests significant financial impact, making the severity high.\n\n{\"intent\": \"billing\", \"product\": \"api\", \"severity\": \"high\"}",
+      "prompt_eval_count": 153,
+      "eval_count": 75
+    },
+    "3b653e9598f44b6276a54154aef218b63b87c0590c9871ea2ff7d35e7d586eda": {
+      "model": "gemma3:27b",
+      "response": "The user reports the mobile app crashing, indicating a bug. This prevents access to files, which is a significant issue for the user. Therefore:\n- intent: bug\n- product: mobile\n- severity: high\n\n{\"intent\": \"bug\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 153,
+      "eval_count": 64
+    },
+    "0b5de458a282efd559b20fac326348dda6d16e71e8f9c838b75da7ecdca5b6e0": {
+      "model": "gemma3:27b",
+      "response": "The user is reporting a technical issue with the synchronization process. This indicates a **bug**. The problem specifically mentions the \"sync client\", so the **product** is clearly **sync**. The inability to update folders suggests a significant disruption, but doesn't indicate data loss or complete failure, making the **severity** **medium**.\n\n{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 148,
+      "eval_count": 86
+    },
+    "17b50fcf918e745e73940d44292c0f1111fa58bbdbe7d8be3ce9c5616c1fe6c5": {
+      "model": "gemma3:27b",
+      "response": "The user reports a visual issue with a button on a webpage. This indicates a bug related to the website's interface. The problem is described as \"cosmetic,\" meaning it doesn't affect functionality and therefore has low severity.\n\n{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 151,
+      "eval_count": 67
+    },
+    "7b075a2815d86baf682861cc135f35012656fbd910b94d60a7efdfea9ef51786": {
+      "model": "gemma3:27b",
+      "response": "The user reports an error with the API causing a production outage. This clearly indicates a bug. The product involved is the API. Given that it's impacting a production integration, the severity is high.\n\n{\"intent\": \"bug\", \"product\": \"api\", \"severity\": \"high\"}",
+      "prompt_eval_count": 153,
+      "eval_count": 61
+    },
+    "8ba158f0af1e01fb6248fbb05dde2f10c1dd8511aabf2d135f338837c5381ec4": {
+      "model": "gemma3:27b",
+      "response": "The user reports a problem with files not being updated correctly but duplicated instead. This indicates a bug in the system's functionality. The product involved is \"sync\" as that's what's malfunctioning. The issue causes confusion, so while annoying it isn't critical; therefore, severity is medium.\n\n{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 147,
+      "eval_count": 82
+    },
+    "bc5c653f2362e84c4d834045c44e839f9ac0bf59ad3e2bb81cf6382c8b642010": {
+      "model": "gemma3:27b",
+      "response": "The user is reporting a visual issue with the web dashboard. This indicates a bug related to the product \"web\". Since it's described as \"nothing serious\", the severity is \"low\". The intent is clearly to report a problem, so it falls under \"bug\".\n\n{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 148,
+      "eval_count": 75
+    },
+    "16f75e41f6c1ab9e9cf007f22d73147db9303c5ebe2231d64f80ed1ca6290a68": {
+      "model": "gemma3:27b",
+      "response": "The user is requesting a feature for the sync client. This falls under feedback regarding the product itself. There's no indication of urgency or a problem, so severity is low.\n\n{\"intent\": \"feedback\", \"product\": \"sync\", \"severity\": \"low\"}",
+      "prompt_eval_count": 153,
+      "eval_count": 56
+    },
+    "6a4542982a04c5235bdfe6e2fd2953dcb85f51432ea194b5e601796e101aedf5": {
+      "model": "gemma3:27b",
+      "response": "The user is requesting a new feature for the mobile application. This falls under feedback regarding the product itself. The request doesn't indicate any urgent issue, so severity is low.\n\n{\"intent\": \"feedback\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 150,
+      "eval_count": 56
+    },
+    "e1b252d63fcefd199a76f8507ed716f4e5ee7acde4b29cbea0d74cab5b3405a3": {
+      "model": "gemma3:27b",
+      "response": "The message is a suggestion for improvement, so the intent is feedback. The suggestion relates to the API documentation, making the product \"api\". Since it's just a suggestion and not a critical issue, the severity is low.\n\n{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 146,
+      "eval_count": 66
+    },
+    "6a16ec846e22cc9217ad806de42be8bf765bf10f5288826b78db1ebfd82564d1": {
+      "model": "gemma3:27b",
+      "response": "The user is requesting a feature change for the sync client. This indicates **feedback** as the intent. The message specifically mentions \"sync client\", so the **product** is **sync**. Since this is a feature request and not something broken, the **severity** is **low**.\n\n{\"intent\": \"feedback\", \"product\": \"sync\", \"severity\": \"low\"}",
+      "prompt_eval_count": 148,
+      "eval_count": 77
+    },
+    "758e99563bd74e595734cc804acc846de5ef3cdd7178df6a71f2be2be9489722": {
+      "model": "gemma3:27b",
+      "response": "The user is expressing a requirement for data export which relates to their account and ability to continue using the product. This indicates an issue with trusting the product, so it's not simply feedback but a blocker to continued use. The request is framed as \"urgently\", indicating high severity. The context clearly refers to the mobile application.\n\n{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 153,
+      "eval_count": 87
+    },
+    "c0ecb0abe72c66e4024fed0dbed2dae90d77ec12b3c7e1f291fa2c40122c76c8": {
+      "model": "gemma3:27b",
+      "response": "The message expresses a suggestion for a new feature (webhook) related to the API. This indicates feedback about the product. The request isn't reporting an issue, so it's not a bug or billing concern and doesn't indicate account problems. Since it is a feature request, the severity is low.\n\n{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 147,
+      "eval_count": 83
+    },
+    "a6a77846e6d0b8d3e0afd3d85fd039a73798213ea9be5e0ed12eee98aaa897bf": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 252,
+      "eval_count": 19
+    },
+    "a4ccd4b5d59a9926cb62bc674624725a9c641fd53c1043a41ad45df1dc136be2": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 253,
+      "eval_count": 19
+    },
+    "f33e59122095a4498008bdf9492272367102c4a56af70e1f049d8e37332f380a": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 254,
+      "eval_count": 19
+    },
+    "2ef62144bfab9ca52cf8cf6e328db1d50cb6bcebb20173e16fbe314b25992eee": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "6d0b203a561a133271d80679cb1c90e33f9219e855cc46e4b6953ccb42ae8668": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 249,
+      "eval_count": 19
+    },
+    "27ae682c3f3a372a04f4515bb9f92ed38f597b36824689c493a4a79650d63b97": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 254,
+      "eval_count": 19
+    },
+    "222b26be550c2b45af0d0baeac215b856d6fff9b4a9c9a1967bdde54a9be676c": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 255,
+      "eval_count": 19
+    },
+    "0e3bc74f2a27ccffaf8fff8e030c90178512e6c173d9a31a46b7c9d35191f345": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 256,
+      "eval_count": 19
+    },
+    "965ba83eed68df877e31ca88cb41717bfc92dbc78d428d5a7fb2ae84a1c9d6b8": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 255,
+      "eval_count": 19
+    },
+    "713e26c00862f2690eee505282ea1a36fe2abe4175c0ef2f2a829ed930525ed4": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 250,
+      "eval_count": 19
+    },
+    "ea81da5703955c0529351d71840547f0d1e7180dd43151b563d9d152562d186c": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 251,
+      "eval_count": 19
+    },
+    "0d6fc97471513e9a7243c3d495aa747063afc3cfa6ce0fb627b9514b177a64fc": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"api\", \"severity\": \"high\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "f11d9255205bc9040f9e7583ccd05d047ac5d94d95897c43410029344b464cb1": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "56681730a0bdb8b0baf7aa47491bec54aaf7e2332f150fee5a9c71debf0e0a85": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 252,
+      "eval_count": 19
+    },
+    "0d76298491074a263823069788bc2fd3fdc1ad4beca9174b487e1fec73b87b0c": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 255,
+      "eval_count": 19
+    },
+    "5b97f21d6009ded8d53527022541bf456d0bd8166fe80a415d23926943524cca": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"api\", \"severity\": \"high\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "d099aa4d810456a1eb4014b1331c0f4cccce36fd32c778d67a9097eca344ce71": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 251,
+      "eval_count": 19
+    },
+    "6dc2a34f9298e7a2f3cb43298d3bdf4c792c7998f411bb9311c51ed38d091530": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 252,
+      "eval_count": 19
+    },
+    "beee194dbb76630bd419ee4dab24c530cff3d48f71bfa781b1e198cd841de7c9": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"sync\", \"severity\": \"low\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "bc84d3e461477fc9403fa2c9497f40f3224a41d133c535fd2eebb9a1c7ef3414": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 254,
+      "eval_count": 19
+    },
+    "513b3c642e42976786917542f5dc5bbffa6460da127a08bfd1b6fcf224b2b483": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 250,
+      "eval_count": 19
+    },
+    "668a4869867f8f18c78dcdffe8fd5951e5f88531ae438825fc5109de83dd13cc": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"sync\", \"severity\": \"low\"}",
+      "prompt_eval_count": 252,
+      "eval_count": 19
+    },
+    "2c1d5076903b742b1d33c3e52bd34e3cc58054c3f907d90711a7a82a17fec051": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "bdab5fbd266e51346a494726aa0304085c46657298c05913888b473e0a69b265": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 251,
+      "eval_count": 19
+    },
+    "8c12ce1678aa0e68797a6f8038033b20ad324f6ec2c6307a1d02d7d8c4ce025a": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"high\"}",
+      "prompt_eval_count": 268,
+      "eval_count": 19
+    },
+    "e3db28eb98a54a95b0079b4b47e426d58e2c6d4f3d672a1af53e3917d90b7177": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"high\"}",
+      "prompt_eval_count": 331,
+      "eval_count": 19
+    },
+    "abaaa95b6cebff040777f5eccf4adbe22281c187c92f0086f75faaea3e609350": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 266,
+      "eval_count": 19
+    },
+    "3f2469f7ba820cb4a5aa75198659234029c560998b4d60a7ed28808c0579285b": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 329,
+      "eval_count": 19
+    },
+    "5871a670e388f10d600199eac9821e4f28ea7d91fa3893fa80c64b7db0e9c5d8": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 266,
+      "eval_count": 19
+    },
+    "4cfc0854645ce43ab42aab449e3bd015de3c2a5235c5a8c0f5f2216a4dc4b2ca": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"mobile\", \"severity\": \"high\"}",
+      "prompt_eval_count": 329,
+      "eval_count": 19
+    },
+    "a3fa9940e3c5b29e9ab6b8b3d071c73f61553b079b47c1d5c86fb3ca6c4e0d8c": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"api\", \"severity\": \"high\"}",
+      "prompt_eval_count": 268,
+      "eval_count": 19
+    },
+    "69c060bc1b4a9ab5c5adb3cafb05c2396e5d666b354c498bdeb00618bdd02eb3": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"api\", \"severity\": \"high\"}",
+      "prompt_eval_count": 331,
+      "eval_count": 19
+    },
+    "277ab4d0b39ac40ae431837f327c31c8d2e8ade5f9d35f328f40b7e1a99a6e3f": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 256,
+      "eval_count": 19
+    },
+    "59750c1d320acca7b56a2990c31d5487c4cc37f813420430f5dc9f3f10302683": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 319,
+      "eval_count": 19
+    },
+    "97420be1be3829c1af66e1052a900fe005b92d1279a1ab6cc1ce9c2d9b07682a": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 264,
+      "eval_count": 19
+    },
+    "451a91937b5133f509e6fad410d23addbe0178831e6fc8b085f12d9a0ded3bda": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 327,
+      "eval_count": 19
+    },
+    "546dbdbee2bde5485aa37bc7ffa2070ef8ef33706683426b92e9651b6a7a15d5": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"mobile\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 257,
+      "eval_count": 19
+    },
+    "b853950b5b8e40c81c74442d7355e55d20a57b727cb232d2332566c593ed22e0": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"mobile\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 320,
+      "eval_count": 19
+    },
+    "f33a9e188df154e7b165597cfa34411ad004f31e975a3141b2390d60f215f68b": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 261,
+      "eval_count": 19
+    },
+    "d4389473468cab1377668c7d43d7d048b246ae952e8e7fc58e2a0ba77d091afe": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"low\"}",
+      "prompt_eval_count": 324,
+      "eval_count": 19
+    },
+    "ba952abb2c17f29540a143006139fbb90f81420cfa3f6c91c686d6143aee629d": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 260,
+      "eval_count": 19
+    },
+    "485a24b4f5577669ebb62b47d3b1b6d25c2513894b3778a6e95df9477a543716": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"bug\", \"product\": \"sync\", \"severity\": \"medium\"}",
+      "prompt_eval_count": 323,
+      "eval_count": 19
+    },
+    "93728489ba086b388f68a0192fe8825a554cb03c7fecec3f87fb7b189695954f": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 260,
+      "eval_count": 19
+    },
+    "b2efae91f40e0b3b4b21cffd2990c651db39e4bb0877acf683828c190d6b5ca7": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"billing\", \"product\": \"mobile\", \"severity\": \"low\"}",
+      "prompt_eval_count": 323,
+      "eval_count": 19
+    },
+    "d77b6bfd3928e932ea6e5539a16681a71c2320280637a00e3de31e8170ff5f21": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 262,
+      "eval_count": 19
+    },
+    "6e66fcb7377d7a5cc20242e9d98e2582049200827ef1a77da546a84350ad5402": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"feedback\", \"product\": \"api\", \"severity\": \"low\"}",
+      "prompt_eval_count": 325,
+      "eval_count": 19
+    },
+    "0b8dd5839117cf1b9f52c50757bd9089a1823a74ebb1d963118e0bf033b693e8": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 264,
+      "eval_count": 19
+    },
+    "4c0c922502ba5c0952ba9bfd337d3f4c1f9d1436dd13a4070b308f61a2760f72": {
+      "model": "gemma3:27b",
+      "response": "{\"intent\": \"account\", \"product\": \"web\", \"severity\": \"high\"}",
+      "prompt_eval_count": 327,
+      "eval_count": 19
+    }
+  }
+}

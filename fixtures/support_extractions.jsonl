@@ -1,0 +1,24 @@
+{"id": "e01", "message": "I cannot log in to the web dashboard even after resetting my password twice.", "intent": "account", "product": "web", "severity": "medium"}
+{"id": "e02", "message": "How do I change the email address shown on my profile in the mobile app?", "intent": "account", "product": "mobile", "severity": "low"}
+{"id": "e03", "message": "Someone changed my account password and I am now completely locked out, this is urgent.", "intent": "account", "product": "api", "severity": "high"}
+{"id": "e04", "message": "My account shows two-factor is on but the sync client keeps asking me to sign in again.", "intent": "account", "product": "sync", "severity": "medium"}
+{"id": "e05", "message": "Where in the web settings can I update my display name?", "intent": "account", "product": "web", "severity": "low"}
+{"id": "e06", "message": "My account was suspended with no warning and I can no longer access anything on mobile.", "intent": "account", "product": "mobile", "severity": "high"}
+{"id": "e07", "message": "I was charged twice for this month on the web plan, please refund the duplicate invoice.", "intent": "billing", "product": "web", "severity": "medium"}
+{"id": "e08", "message": "Can you send me a copy of last quarter's receipts for the API add-on?", "intent": "billing", "product": "api", "severity": "low"}
+{"id": "e09", "message": "You charged my card the full annual fee after I cancelled, I need this reversed immediately.", "intent": "billing", "product": "sync", "severity": "high"}
+{"id": "e10", "message": "Does the mobile subscription price change if I switch to yearly billing?", "intent": "billing", "product": "mobile", "severity": "low"}
+{"id": "e11", "message": "My invoice shows a plan I never selected and the total looks wrong.", "intent": "billing", "product": "web", "severity": "medium"}
+{"id": "e12", "message": "We were billed for ten thousand extra API calls we did not make and it is a large amount.", "intent": "billing", "product": "api", "severity": "high"}
+{"id": "e13", "message": "The mobile app crashes to a blank screen on launch and I have lost access to all my files.", "intent": "bug", "product": "mobile", "severity": "high"}
+{"id": "e14", "message": "The sync client keeps showing a spinning icon and some folders never finish updating.", "intent": "bug", "product": "sync", "severity": "medium"}
+{"id": "e15", "message": "A button label on the web page overlaps the icon, it is only a cosmetic glitch.", "intent": "bug", "product": "web", "severity": "low"}
+{"id": "e16", "message": "The API returns a 500 error on every upload call and our production integration is down.", "intent": "bug", "product": "api", "severity": "high"}
+{"id": "e17", "message": "Sync sometimes duplicates a file instead of updating it, which is confusing.", "intent": "bug", "product": "sync", "severity": "medium"}
+{"id": "e18", "message": "The web dashboard chart flickers once when the page loads, nothing serious.", "intent": "bug", "product": "web", "severity": "low"}
+{"id": "e19", "message": "It would be nice if the sync client had a dark theme one day, no rush at all.", "intent": "feedback", "product": "sync", "severity": "low"}
+{"id": "e20", "message": "Please add an offline mode to the mobile app, it would really help my workflow.", "intent": "feedback", "product": "mobile", "severity": "medium"}
+{"id": "e21", "message": "A small suggestion: the API docs could use more code examples.", "intent": "feedback", "product": "api", "severity": "low"}
+{"id": "e22", "message": "I wish the sync client let me pick which folders to sync by default.", "intent": "feedback", "product": "sync", "severity": "medium"}
+{"id": "e23", "message": "You urgently need a way to export all of my data from mobile before I can trust this product.", "intent": "feedback", "product": "mobile", "severity": "high"}
+{"id": "e24", "message": "Great tool overall; one idea is a webhook for completed API jobs.", "intent": "feedback", "product": "api", "severity": "low"}
