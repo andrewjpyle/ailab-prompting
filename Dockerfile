@@ -6,6 +6,12 @@ ARG PYTHON_IMAGE=python:3.12-slim
 FROM ${PYTHON_IMAGE} AS builder
 COPY --from=ghcr.io/astral-sh/uv:0.9.21 /uv /usr/local/bin/uv
 
+# git is needed by uv to fetch the ailab-core git dependency during the build.
+# Builder-stage only: the runtime stage copies the resolved /opt/venv and needs no git.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git \
+    && rm -rf /var/lib/apt/lists/*
+
 ENV UV_COMPILE_BYTECODE=1 \
     UV_LINK_MODE=copy \
     UV_PYTHON_DOWNLOADS=never \

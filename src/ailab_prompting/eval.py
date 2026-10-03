@@ -29,6 +29,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from ailab_core.gate import floor_breach
+
 from ailab_prompting.baselines import EmptyBaseline, MajorityBaseline
 from ailab_prompting.config import ConfigError, EvalConfig, load_config
 from ailab_prompting.data import (
@@ -454,16 +456,12 @@ def _gate(
             f"between-strategy delta {delta['value']:.4f} < required "
             f"{config.strategy_delta_min:.4f} on {delta['metric']}; strategies do not differ"
         )
-    if primary["field_accuracy"] < config.min_field_accuracy - tol:
-        failures.append(
-            f"field_accuracy {primary['field_accuracy']:.4f} < floor "
-            f"{config.min_field_accuracy:.4f} - tolerance {tol:.4f}"
-        )
-    if primary["format_valid"] < config.min_format_valid - tol:
-        failures.append(
-            f"format_valid {primary['format_valid']:.4f} < floor "
-            f"{config.min_format_valid:.4f} - tolerance {tol:.4f}"
-        )
+    if msg := floor_breach(
+        "field_accuracy", primary["field_accuracy"], config.min_field_accuracy, tol
+    ):
+        failures.append(msg)
+    if msg := floor_breach("format_valid", primary["format_valid"], config.min_format_valid, tol):
+        failures.append(msg)
     if margin < config.baseline_margin:
         failures.append(
             f"baseline_margin {margin:.4f} < required {config.baseline_margin:.4f}; "

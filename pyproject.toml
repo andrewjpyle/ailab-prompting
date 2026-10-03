@@ -7,7 +7,9 @@ license = "Apache-2.0"
 license-files = ["LICENSE"]
 authors = [{ name = "Andrew Pyle" }]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "ailab-core @ git+https://github.com/andrewjpyle/ailab-core@06856ce7e489149c2d71638b06aa2dcd7c15e02e",
+]
 
 [project.scripts]
 ailab-eval = "ailab_prompting.eval:main"
@@ -24,6 +26,10 @@ dev = [
 [build-system]
 requires = ["hatchling>=1.26"]
 build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+# ailab-core is pinned by a direct git reference (an immutable commit SHA).
+allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ailab_prompting"]
