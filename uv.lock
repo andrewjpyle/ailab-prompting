@@ -7,9 +7,17 @@ resolution-markers = [
 ]
 
 [[package]]
+name = "ailab-core"
+version = "0.1.0"
+source = { git = "https://github.com/andrewjpyle/ailab-core?rev=06856ce7e489149c2d71638b06aa2dcd7c15e02e#06856ce7e489149c2d71638b06aa2dcd7c15e02e" }
+
+[[package]]
 name = "ailab-prompting"
 version = "0.1.0"
 source = { editable = "." }
+dependencies = [
+    { name = "ailab-core" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -20,6 +28,7 @@ dev = [
 ]
 
 [package.metadata]
+requires-dist = [{ name = "ailab-core", git = "https://github.com/andrewjpyle/ailab-core?rev=06856ce7e489149c2d71638b06aa2dcd7c15e02e" }]
 
 [package.metadata.requires-dev]
 dev = [

@@ -24,6 +24,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from ailab_core.providers import SupportsTokenCounts
+
 from ailab_prompting.providers import LLMProvider
 from ailab_prompting.schema import (
     allowlist_coerce,
@@ -81,6 +83,10 @@ class Extractor:
     def run(self, message: str) -> ExtractResult:
         prompt = self.build_prompt(message)
         raw = self.provider.complete(prompt)
+        if not isinstance(self.provider, SupportsTokenCounts):
+            raise TypeError(
+                "extractor requires a provider that reports token_counts (the cost axis)"
+            )
         prompt_tokens, completion_tokens, estimated = self.provider.token_counts(prompt)
 
         parsed = _INVALID_RECORD.copy() if self.force_invalid else parse_record(raw)
