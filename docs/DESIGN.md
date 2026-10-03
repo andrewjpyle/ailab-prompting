@@ -110,13 +110,17 @@ not prose. Any model output quoted in the docs is paraphrased, so the em-dash li
 `check_learning_numbers` never conflict. `make check-learning-numbers` fails if a tagged
 figure in `docs/LEARNING.md` differs from the committed results.
 
-## 7. The ailab-core extraction trigger
+## 7. The ailab-core extraction trigger (SATISFIED 2026-10-02)
 
-This is the hard rule recorded now: there is NO third lab until a shared `ailab-core` package
-holds the gate, the provider seam, the cassette, and the content-lint. This lab copied those
-pieces from `ailab-rag` by hand (see the verbatim list above). Two labs sharing copies is
-acceptable; three is the trigger to extract `ailab-core` and have each lab depend on it,
-rather than fan out O(labs) hand-copies that drift.
+The hard rule recorded here was: there is NO new lab beyond the existing set until a shared
+`ailab-core` package holds the gate, the provider seam, the cassette, and the content-lint, so
+the labs stop fanning out O(labs) hand-copies that drift. This lab had copied those pieces from
+`ailab-rag` by hand (see the verbatim list above).
+
+That trigger is now SATISFIED. `ailab-core` exists (github.com/andrewjpyle/ailab-core) and this
+lab depends on it at a pinned commit: the provider seam, the cassette replay and the gate floor
+primitive are imported from `ailab_core`, not copied. `ailab-rag` depends on it too. A new lab
+may now be built on top of `ailab-core`.
 
 ## 8. Kept from the template
 
