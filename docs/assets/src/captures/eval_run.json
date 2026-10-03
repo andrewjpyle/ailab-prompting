@@ -1,0 +1,13 @@
+{
+  "name": "eval_run",
+  "command": [
+    "./.venv/bin/ailab-eval"
+  ],
+  "exit_code": 0,
+  "captured_at": "2026-10-03T04:22:01+00:00",
+  "commit": "2bafaea7d5d2838f4dc3a8e43ff9b521df1f8a0f",
+  "line_count": 11,
+  "env_passed": [],
+  "note": "",
+  "output": "| Date | Commit | Provider | Strategy | field_acc | format_valid | record_exact | macro_f1 | Notes |\n|---|---|---|---|---|---|---|---|---|\n| 2026-10-03 | 2bafaea | ollama | zero_shot | 0.9028 | 1.0000 | 0.7500 | 0.9009 |  |\n| 2026-10-03 | 2bafaea | ollama | few_shot | 0.9306 | 1.0000 | 0.7917 | 0.9311 | PASS |\n| 2026-10-03 | 2bafaea | ollama | cot | 0.8750 | 1.0000 | 0.6667 | 0.8704 |  |\nbaselines: empty_fa=0.0000 majority_fa=0.2917 best_strategy_fa=0.9306 margin=0.6389 (required 0.10)\nbetween-strategy delta: 0.1250 on record_exact (required 0.02); byte_identical=False\nheadline few_shot vs zero_shot on record_exact: delta 0.0417 CI [0.0000, 0.1250] (no significant difference)\ninjection (few_shot, n=12): asr_off=0.0000 asr_on=0.0000 obeyed_off=0.0000 obeyed_on=0.0000 -> INSUFFICIENT\nsaturation guard: record_exact_max=0.7917 -> ok\ncassette: provider=ollama model=gemma3:27b entries=120 replayed_calls=96\n"
+}
